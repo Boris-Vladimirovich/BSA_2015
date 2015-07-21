@@ -1,0 +1,17 @@
+Получить список стран: GET http://localhost:1337/country
+Получить список отелей в стране: GET http://localhost:1337/country/Ukraine/hotel
+Добавить страну: POST http://localhost:1337/country
+Добавить отель в страну: POST http://localhost:1337/country/Egypt/hotel
+Удалить определенный отель: DELETE http://localhost:1337/hotel/3
+Получить информацию об определенном отеле: GET http://localhost:1337/hotel/3
+Обновить информацию об определенном отеле: PUT http://localhost:1337/hotel/3
+Реализовать REST API по которым вернется ошибка (400, 404) обычным сообщением: GET http://localhost:1337/badrequest
+Реализовать REST API по которым вернется ошибка и отобразится в соответствующем темплейте c кастомным сообщением. GET http://localhost:1337/badcustom
+Реализовать REST API c использованием blueprint:
+	-	GET http://localhost:1337/blue/country
+	-	GET http://localhost:1337/blue/hotels/?country=Ukraine
+	-	POST http://localhost:1337/blue/country/?name=Australia&description=VeryBig 
+	-	POST http://localhost:1337/blue/hotels/?name=New&description=5stars&country=Spain
+	-	DELETE http://localhost:1337/blue/hotels/3
+	-	GET http://localhost:1337/blue/hotels/3
+	-	PUT http://localhost:1337/blue/hotels/3/?name=newName&description=newDescription

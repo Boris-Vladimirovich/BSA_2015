@@ -1,0 +1,91 @@
+{
+  "data": {
+    "country": [{
+		"name": "Ukraine",
+		"description": "European country"
+	},{
+		"name": "China",
+		"description": "Asian country"
+	},{
+		"name": "Egypt",
+		"description": "African country"
+	},{
+		"name": "Canada",
+		"description": "North American country"
+	}],
+    "hotels": [{
+		"id": 1,
+		"name": "Hilton",
+		"country": "Ukraine",
+		"description": "5 stars"
+	},{
+		"id": 2,
+		"name": "Grand",
+		"country": "Egypt",
+		"description": "5 stars"
+	},{
+		"id": 3,
+		"name": "Last resort",
+		"country": "China",
+		"description": "4 stars"
+	},{
+		"id": 4,
+		"name": "Kyiv",
+		"country": "Ukraine",
+		"description": "4 stars"
+	},{
+		"id": 5,
+		"name": "North",
+		"country": "Canada",
+		"description": "3 stars"
+	}]},
+    "schema": {
+      "country": {
+        "name": {
+        "type": "string",
+        "unique": true
+      },
+      "description": {
+        "type": "string",
+        "defaultsTo": ""
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "hotel": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string",
+        "defaultsTo": ""
+      },
+      "country": {
+        "type": "string",
+        "defaultsTo": ""
+      },
+      "description": {
+        "type": "string",
+        "defaultsTo": ""
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "country": {},
+    "hotel": {
+      "id": 5
+    }
+  }
+}
